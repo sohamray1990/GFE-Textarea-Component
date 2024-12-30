@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Textarea Component | GreatFrontEnd Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/favicon.ico" sizes="any" />
+</head>
+
+<body>
+  <!-- Add your site or application content here -->
+  <div class="container">
+    <div class="textarea-variants">
+
+      <!-- Textarea One -->
+      <div class="textarea">
+        <label for="description-field1">Description</label>
+        <textarea id="description-field1" placeholder="Write your message..."></textarea>
+        <!-- Hint or Error text -->
+        <div class="textarea__messages">
+          <div class="textarea__messages__count">
+            <span id="description-field-count1">0</span>/500
+          </div>
+        </div>
+      </div>
+
+      <!-- Textarea One -->
+      <div class="textarea">
+        <label for="description-field2">Description</label>
+        <textarea class="error" aria-describedby="description-error" id="description-field2"
+          placeholder="Enter a description..."></textarea>
+        <div class="textarea__messages">
+          <div id="description-error" class="error">
+            This field is required
+          </div>
+        </div>
+      </div>
+
+      <!-- Textarea One -->
+      <div class="textarea">
+        <label for="description-field3">Description</label>
+        <textarea id="description-field3" placeholder="Write your message..." disabled></textarea>
+        <div class="textarea__messages">
+          <div class="textarea__messages__count">
+            <span id="description-field-count3">0</span>/500
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
